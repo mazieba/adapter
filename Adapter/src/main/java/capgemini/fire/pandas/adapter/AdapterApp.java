@@ -1,3 +1,4 @@
+package capgemini.fire.pandas.adapter;
 
 public class AdapterApp {
 
