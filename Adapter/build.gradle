@@ -1,9 +1,19 @@
 apply plugin: 'java'
 
+group 'capgemini.fire.pandas'
+version '0.0.1.SNAPSHOT'
+
 repositories {
 	mavenCentral()
 }
 
 dependencies {
     compile 'org.springframework.batch:spring-batch-core:3.0.8.RELEASE'
+    compile 'org.springframework:spring-core:5.0.0.RELEASE'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'capgemini.fire.pandas.adapter.AdapterApp'
+    }
 }
